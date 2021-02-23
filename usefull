@@ -1,0 +1,6 @@
+echo '# TYPE Temperature counter\n Temperature{label="val1"} +45' | curl --data-binary @- http://localhost:9091/metrics/job/temperature_metrics1/instance/localhost
+https://blog.ruanbekker.com/blog/2019/05/17/install-pushgateway-to-expose-metrics-to-prometheus/
+https://www.dmosk.ru/miniinstruktions.php?mini=grafana-prometheus
+https://www.dmosk.ru/miniinstruktions.php?mini=pushgateway-prometheus
+
+нужно сказать prometheus, чтобы он скрапил метрики из pushgateway, затем в grafana настраивается по хосту метрики, которые мы забираем
